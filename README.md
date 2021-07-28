@@ -19,10 +19,13 @@ cmd/gm/にコマンドのインストール用のmainを作成した場合のベ
 
 # いままでやったこと
 
-- 初期の挙動
+- 初期の挙動(ローカル)
 
-単純にinstallすると、「そのモジュールがない」と言われます。
-installがversion 1を指してしまうから当然です。
+$ go install github.com/secondarykey/modules_sample/cmd/greet
+
+ローカルで実行するとgo.modを読んでくれて実行し、GOBINにgreetが作成されます。
+
+- リモートで実行
 
 - v2にする
 
